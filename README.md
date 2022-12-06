@@ -1,2 +1,2 @@
-# Roll-dice-mobile-friendly
+# Roll-dice-mobile
 Dice rolling game adjusted for mobile devices
