@@ -21,13 +21,20 @@ var zvukRunde = new Audio("audio/beep.wav")
 var zvukKlik = new Audio("audio/click.mp3")
 var info = document.querySelector('.krug-info')
 var openInfo = document.querySelector('.info-open')
+var sirinaEkrana = screen.width
+var naslov = document.querySelector('h1')
 var rand1;
 var rand2;
+
+
 
 info.addEventListener('click', () => {
     zvukKlik.play()
     info.style.display = 'none'
     openInfo.style.display = 'block'
+    if(sirinaEkrana < 420) {
+        naslov.style.display = 'none'
+    }
     if(openInfo.style.display == 'block') {
         dugmeBacaj.setAttribute('disabled', 'disabled')
         dugmeNovaIgra.setAttribute('disabled', 'disabled')
