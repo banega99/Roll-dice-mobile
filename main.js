@@ -26,13 +26,13 @@ var naslov = document.querySelector('h1')
 var rand1;
 var rand2;
 
-
+console.log(sirinaEkrana)
 
 info.addEventListener('click', () => {
     zvukKlik.play()
     info.style.display = 'none'
     openInfo.style.display = 'block'
-    if(sirinaEkrana < 420) {
+    if(sirinaEkrana < 930) {
         naslov.style.display = 'none'
     }
     if(openInfo.style.display == 'block') {
