@@ -44,6 +44,7 @@ info.addEventListener('click', () => {
 
 openInfo.addEventListener('click', ()=>{
     zvukKlik.play()
+    naslov.style.display = 'block'
     info.style.display = 'block'
     openInfo.style.display = 'none'
     if(info.style.display == 'block') {
